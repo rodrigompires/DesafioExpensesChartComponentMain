@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+/// CORES
+
+// Primarias
+
+$SoftRED: hsl(10, 79%, 65%);
+$Cyan: hsl(186, 34%, 60%);
+
+
+// Neutras
+
+$DarkBrown: hsl(25, 47%, 15%);
+$MediumBrown: hsl(28, 10%, 53%);
+$Cream: hsl(27, 66%, 92%);
+$VeryPaleOrange: hsl(33, 100%, 98%);
+
+
+
+
+/// TIPOGRAFIA
+
+// Familia, Pesos e Tamanho
+
+$FontFamily: 'DM Sans', sans-serif;
+$Size-18: 18px;
+$Weights-400: 400;
+$Weights-700: 700;
+
+
+/// TRANSIÇÃO
+
+$AllTransition: all .4s ease;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $FontFamily;
+    font-size: $Size-18;
+}
+
+body {
+    min-width: 375px;
+    max-width: 1440px;
+    min-height: 100vh;
+    background-color: $Cream;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}

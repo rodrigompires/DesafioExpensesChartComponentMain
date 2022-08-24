@@ -1,0 +1,80 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+   
+    width: 100%;
+
+    .attribution {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+
+        .textByChallenge {
+            font-size: .8rem;
+
+            a {
+                text-decoration: none;
+                color: $Cyan;
+                font-size: .8rem;
+            }
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                font-size: .8rem;
+            }
+            
+            .nameAuthor {
+                
+                .name {
+                    text-decoration: none;
+                    color: $DarkBrown;
+                    cursor: pointer;
+                    font-family: 'Nothing You Could Do', cursive;
+                    font-size: 1.5rem;
+                    font-weight: $Weights-700;
+                }
+            }
+           
+
+        }
+
+        .myFakeSignature {
+            width: 30%;
+            display: none;
+            transition: all .3s ease;
+
+
+            &.show {
+                display: block;
+                animation: show .5s ease;
+            }
+
+            .gif {
+                width: 100%;
+    
+            }
+        }
+    }
+}
+
+@keyframes show {
+    0% {
+        transform: translateY(30%);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

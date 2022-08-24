@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  min-width: 375px;
+  max-width: 1440px;
+  min-height: 100vh;
+  background-color: hsl(27deg, 66%, 92%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 3.8rem 0.9rem 2rem 0.9rem;
+  transition: all 0.4s ease;
+}
+.container header {
+  background-color: hsl(10deg, 79%, 65%);
+  width: 18.9rem;
+  padding: 1.02rem 1.3rem 1.3rem 1.08rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+.container header .infosHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.container header .infosHeader .titleHeader {
+  color: hsl(27deg, 66%, 92%);
+  font-size: 0.83rem;
+}
+.container header .infosHeader .valueHeader {
+  color: hsl(33deg, 100%, 98%);
+  font-size: 1.3rem;
+}
+.container header .logo {
+  width: 20%;
+  overflow: hidden;
+  margin-top: 8px;
+}
+.container header .logo img {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: hsl(33deg, 100%, 98%);
+  width: 18.9rem;
+  padding: 1.1rem 1.12rem 1.6rem 1.12rem;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+.content .textContent {
+  font-size: 1.34rem;
+  text-align: start;
+  width: 100%;
+  color: hsl(25deg, 47%, 15%);
+  font-weight: 700;
+}
+.content .chart {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  border-bottom: 2px solid hsl(27deg, 66%, 92%);
+  padding-bottom: 1.3rem;
+}
+.content .chart .chartColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 12.8rem;
+  border-radius: 5px;
+  gap: 0.5rem;
+}
+.content .chart .chartColumn .chartColumnContent {
+  position: relative;
+  min-width: 1.84rem;
+  border-radius: 4px;
+  height: 153px;
+  background-color: hsl(10deg, 79%, 65%);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.content .chart .chartColumn .chartColumnContent:hover {
+  opacity: 0.8;
+  transition: all 0.4s ease;
+}
+.content .chart .chartColumn .chartColumnContent.clicked {
+  background-color: hsl(186deg, 34%, 60%);
+  transition: all 0.4s ease;
+}
+.content .chart .chartColumn .chartColumnContent .label {
+  position: absolute;
+  left: 50%;
+  top: -32px;
+  transform: translateX(-50%);
+  padding: 0.3rem;
+  background-color: hsl(25deg, 47%, 15%);
+  color: hsl(33deg, 100%, 98%);
+  font-size: 0.65rem;
+  border-radius: 3px;
+  width: 140%;
+  display: none;
+}
+.content .chart .chartColumn .chartColumnContent .label.show {
+  display: block;
+}
+.content .chart .chartDay {
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: hsl(28deg, 10%, 53%);
+  border-radius: 5px;
+}
+
+.infosMonth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.1rem;
+  width: 100%;
+}
+.infosMonth .valueMonth .textMonth {
+  font-size: 0.85rem;
+  color: hsl(28deg, 10%, 53%);
+}
+.infosMonth .valueMonth .valueTotalMonth {
+  font-size: 1.66rem;
+  font-weight: 700;
+  color: hsl(25deg, 47%, 15%);
+  margin-top: 0.3rem;
+}
+.infosMonth .percentageMonth {
+  text-align: end;
+  margin-top: 1.3rem;
+}
+.infosMonth .percentageMonth .accumulatedMonth {
+  font-size: 0.83rem;
+  font-weight: 700;
+  color: hsl(25deg, 47%, 15%);
+}
+.infosMonth .percentageMonth .informationMonth {
+  font-size: 0.84rem;
+  color: hsl(28deg, 10%, 53%);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+footer .attribution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .attribution .textByChallenge {
+  font-size: 0.8rem;
+}
+footer .attribution .textByChallenge a {
+  text-decoration: none;
+  color: hsl(186deg, 34%, 60%);
+  font-size: 0.8rem;
+}
+footer .attribution .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .attribution .footer span {
+  font-size: 0.8rem;
+}
+footer .attribution .footer .nameAuthor .name {
+  text-decoration: none;
+  color: hsl(25deg, 47%, 15%);
+  cursor: pointer;
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+footer .attribution .myFakeSignature {
+  width: 30%;
+  display: none;
+  transition: all 0.3s ease;
+}
+footer .attribution .myFakeSignature.show {
+  display: block;
+  animation: show 0.5s ease;
+}
+footer .attribution .myFakeSignature .gif {
+  width: 100%;
+}
+
+@keyframes show {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container header {
+    width: 22rem;
+  }
+  .container .content {
+    width: 22rem;
+  }
+  .container .content .chartColumnContent {
+    min-width: 2.2rem !important;
+  }
+  .container footer {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .container header {
+    width: 28rem;
+  }
+  .container .content {
+    width: 28rem;
+  }
+  .container .content .chartColumnContent {
+    min-width: 3rem !important;
+  }
+  .container .content .chartColumnContent .label {
+    width: 120% !important;
+  }
+  .container footer {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+  .container {
+    padding: 10rem 0.9rem 2rem 0.9rem;
+  }
+  .container header {
+    width: 30rem;
+    border-radius: 20px;
+    padding: 1.02rem 2.1rem 1.3rem 1.8rem;
+  }
+  .container header .infosHeader {
+    margin-top: 0.5rem;
+  }
+  .container header .infosHeader .titleHeader {
+    font-size: 1rem;
+  }
+  .container header .infosHeader .valueHeader {
+    font-size: 1.78rem;
+  }
+  .container header .logo {
+    width: 15.5%;
+  }
+  .container .content {
+    border-radius: 20px;
+    width: 30rem;
+    padding: 2.2rem 2.2rem 1.6rem 2.2rem;
+  }
+  .container .content .textContent {
+    font-size: 1.77rem;
+  }
+  .container .content .chart {
+    margin-top: 0.7rem;
+    padding-bottom: 1.9rem;
+  }
+  .container .content .chart .chartColumnContent {
+    min-width: 2.8rem !important;
+  }
+  .container .content .chart .chartColumnContent .label {
+    width: 100%;
+  }
+  .container .content .chart .chartDay {
+    font-size: 0.8rem;
+  }
+  .infosMonth {
+    margin-top: 1.8rem;
+  }
+  .infosMonth .valueMonth .textMonth {
+    font-size: 1.03rem;
+  }
+  .infosMonth .valueMonth .valueTotalMonth {
+    font-size: 2.67rem;
+    margin-top: -0.1rem;
+  }
+  .infosMonth .percentageMonth .accumulatedMonth {
+    font-size: 1.03rem;
+    font-weight: 700;
+    color: hsl(25deg, 47%, 15%);
+  }
+  .infosMonth .percentageMonth .informationMonth {
+    font-size: 1.01rem;
+    color: hsl(28deg, 10%, 53%);
+  }
+  footer {
+    width: 30%;
+    position: relative;
+    margin-top: 0.3rem;
+  }
+  .myFakeSignature {
+    width: 18% !important;
+    position: absolute;
+    right: 8%;
+    bottom: 6%;
+  }
+}/*# sourceMappingURL=main.css.map */

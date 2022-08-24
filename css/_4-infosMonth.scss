@@ -1,0 +1,40 @@
+.infosMonth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.1rem;
+    width: 100%;
+
+    .valueMonth {
+
+        .textMonth {
+            font-size: .85rem;
+            color: $MediumBrown;
+        }
+
+        .valueTotalMonth {
+            font-size: 1.66rem;
+            font-weight: $Weights-700;
+            color: $DarkBrown;
+            margin-top: .3rem;
+        }
+    }
+
+    .percentageMonth {
+        text-align: end;
+        margin-top: 1.3rem;
+
+        .accumulatedMonth {
+            font-size: .83rem;
+            font-weight: $Weights-700;
+            color: $DarkBrown;
+
+        }
+
+        .informationMonth {
+            font-size: .84rem;
+            color: $MediumBrown;
+
+        }
+    }
+}

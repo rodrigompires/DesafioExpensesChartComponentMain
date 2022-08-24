@@ -1,0 +1,106 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: $VeryPaleOrange;
+
+    width: 18.9rem;
+
+    padding: 1.1rem 1.12rem 1.6rem 1.12rem;
+    border-radius: 10px;
+
+    transition: $AllTransition;
+
+
+    .textContent {
+        font-size: 1.34rem;
+        text-align: start;
+        width: 100%;
+        color: $DarkBrown;
+        font-weight: $Weights-700;
+    }
+
+    .chart {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        width: 100%;
+
+        border-bottom: 2px solid $Cream;
+        padding-bottom: 1.3rem;
+
+
+
+        .chartColumn {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            min-height: 12.8rem;
+
+            border-radius: 5px;
+            gap: .5rem;
+
+
+
+            .chartColumnContent {
+                position: relative;
+                min-width: 1.84rem;
+                border-radius: 4px;
+                height: 153px;
+                background-color: $SoftRED;
+                cursor: pointer;
+                transition: $AllTransition;
+
+                &:hover {
+                    opacity: .8;
+                    transition: $AllTransition;
+
+                }
+
+                &.clicked {
+                    background-color: $Cyan;
+                    transition: $AllTransition;
+                }
+
+                .label {
+                    position: absolute;
+
+                    left: 50%;
+                    top: -32px;
+                    transform: translateX(-50%);
+                    padding: .3rem;
+                    background-color: $DarkBrown;
+                    color: $VeryPaleOrange;
+                    font-size: .65rem;
+                    border-radius: 3px;
+                    width: 140%;
+                    display: none;
+
+
+                    &.show {
+                        display: block;
+                    }
+                }
+
+
+
+            }
+
+
+        }
+
+        .chartDay {
+            font-size: .65rem;
+            font-weight: $Weights-400;
+
+            color: $MediumBrown;
+            border-radius: 5px;
+
+
+        }
+
+
+    }
+}

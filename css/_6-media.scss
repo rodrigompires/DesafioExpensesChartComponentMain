@@ -1,0 +1,168 @@
+@media screen and (min-width:480px) {
+    .container {
+
+        header {
+            width: 22rem;
+        }
+
+        .content {
+            width: 22rem;
+
+
+            .chartColumnContent {
+                min-width: 2.2rem !important;
+
+            }
+        }
+
+        footer {
+            width: 60%;
+        }
+
+    }
+}
+
+@media screen and (min-width:600px) {
+    .container {
+
+        header {
+            width: 28rem;
+        }
+
+        .content {
+            width: 28rem;
+
+
+            .chartColumnContent {
+                min-width: 3rem !important;
+
+                .label {
+                    width: 120% !important;
+                }
+
+            }
+        }
+
+        footer {
+            width: 35%;
+        }
+
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+    .container {
+
+        padding: 10rem .9rem 2rem .9rem;
+
+        header {
+            width: 30rem;
+            border-radius: 20px;
+            padding: 1.02rem 2.1rem 1.3rem 1.8rem;
+
+            .infosHeader {
+                margin-top: .5rem;
+
+                .titleHeader {
+                    font-size: 1rem;
+                }
+
+                .valueHeader {
+                    font-size: 1.78rem;
+                }
+            }
+
+            .logo {
+                width: 15.5%;
+            }
+
+        }
+
+        .content {
+
+            border-radius: 20px;
+            width: 30rem;
+            padding: 2.2rem 2.2rem 1.6rem 2.2rem;
+
+            .textContent {
+                font-size: 1.77rem;
+            }
+
+            .chart {
+                margin-top: .7rem;
+                padding-bottom: 1.9rem;
+
+                .chartColumnContent {
+                    min-width: 2.8rem !important;
+
+                    .label {
+                        width: 100%;
+                    }
+
+                }
+
+                .chartDay {
+                    font-size: .8rem;
+                }
+            }
+
+
+
+        }
+
+    }
+
+    .infosMonth {
+        margin-top: 1.8rem;
+
+        .valueMonth {
+
+            .textMonth {
+                font-size: 1.03rem;
+
+            }
+
+            .valueTotalMonth {
+                font-size: 2.67rem;
+                margin-top: -.1rem;
+
+            }
+        }
+
+        .percentageMonth {
+
+            .accumulatedMonth {
+                font-size: 1.03rem;
+                font-weight: $Weights-700;
+                color: $DarkBrown;
+
+            }
+
+            .informationMonth {
+                font-size: 1.01rem;
+                color: $MediumBrown;
+
+            }
+        }
+    }
+
+    footer {
+        width: 30%;
+        position: relative;
+        margin-top: .3rem;
+
+    }
+
+
+    .myFakeSignature {
+        width: 18% !important;
+        position: absolute;
+        right: 8%;
+        bottom: 6%;
+
+    }
+}
